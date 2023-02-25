@@ -1,0 +1,258 @@
+body{
+    background-color: #f0f2f5;
+}
+.glavni_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 450px;
+    width: 1250px;
+    margin-left: 150px;
+    border: 1px solid;
+    border: none;
+    gap: 200px;
+    position: relative;
+}
+
+.text_fb{
+    margin-top: -80px;
+    animation: animacija2 1s linear 0s 1 normal forwards; 
+}
+@keyframes animacija2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+h1{
+    font-size: 60px;
+    color: blue;
+    margin-bottom: -25px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.p1{
+    font-size: 28px;
+    font-family: Verdana, Arial, Tahoma, Serif;
+}
+.login{
+    border: 1px solid;
+    height: 380px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 2px 8px  grey;
+    background-color: white;
+    animation: animacija 1s linear 0s 1 normal forwards;
+}
+@keyframes animacija {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.input1{
+    padding: 15px;
+    font-size: 18px;
+    width: 345px;
+    margin-left: 12px;
+    margin-top: 20px;
+    border: 0.5px solid #50FFF2;
+    border-radius: 10px; 
+    outline: none;
+}
+.input1:hover{
+    border: 1px solid blue;
+}
+.input2{
+    padding: 15px;
+    font-size: 18px;
+    width: 345px;
+    margin-left: 12px;
+    margin-top: 20px;
+    border: 0.5px solid #50FFF2;
+    border-radius: 10px; 
+    outline: none;
+}
+.input2:hover{
+    border: 1px solid blue;
+}
+#button1{
+    padding: 12px;
+    width: 378px;
+    margin-left: 12px;
+    font-size: 18px;
+    font-family: Verdana, Arial, Tahoma, Serif;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    margin-left: 135px ;
+    font-family: Verdana, Arial, Tahoma, Serif;
+}
+a:hover{
+    text-decoration-line: underline;
+}
+#open_button{
+    padding: 15px;
+    width: 220px;
+    margin-left: 90px;
+    font-size: 18px;
+    font-family: Verdana, Arial, Tahoma, Serif;
+    background-color: #42b72a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#open_button:hover{
+    background-color: #36a420;
+    transition: 0.5s;
+}
+
+/* modal */
+.modal{
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 2px 8px 2px #1C3033; 
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.visible{
+    display: block;
+    pointer-events: auto;
+    opacity: 1;
+    transition: 1s opacity  ease-in-out;
+}
+.invisible{
+    display: none;
+}
+#close_button{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.p2{
+    font-size: 28px;
+    margin-left: 15px;
+}
+.p3{
+    margin-top: -20px;
+    margin-left: 15px;
+}
+.sign_up{
+    border-bottom: 1px solid grey;
+    width: 500px;
+}
+.firstN{
+    padding: 12px;
+    margin-left: 15px;
+    width: 200px;
+    font-size: 18px;
+}
+.LastN{
+    padding: 12px;
+    width: 200px;
+    font-size: 18px;
+}
+.E_P{
+    padding: 12px;
+    width: 432px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.P_E{
+    padding: 12px;
+    width: 432px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+#Sign_Button{
+    padding: 10px 15px;
+    width: 220px;
+    margin-left: 130px;
+    font-size: 18px;
+    font-family: Verdana, Arial, Tahoma, Serif;
+    background-color: #42b72a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#Sign_Button:hover{
+    background-color: #36a420;
+    transition: 0.5s;
+}
+#close_button{
+    background-color: white;
+}
+
+

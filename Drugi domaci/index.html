@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="glavni_div">
+        
+        <!-- ovo je text sa leve stranice -->
+        <div class="text_fb">
+            <h1>facebook</h1>
+            <p class="p1">Connect with friends and the world <br> around you on Facebook.</p>
+        </div>
+
+        <!-- ovo je div za login forma -->
+        <div class="login">
+            <form class="forma1"> 
+                <input  class="input1"   type="email" required placeholder="Enter your Email"><br>
+                <input class="input2" type="password" required placeholder="Enter your Password"><br><br>
+                <button id="button1">log in</button><br><br>
+                <a href="#">Forgot password?</a><br><br><br>
+            </form>
+            <button id="open_button">Create new account</button>
+        </div>
+    </div>
+
+    <!-- ovo je modal -->
+    <div class="modal invisible" id="modal_Div">
+       <div class="sign_up">
+           <p class="p2"><b>Sign Up</b></p>
+           <p class="p3">It’s quick and easy.</p>
+           <button id="close_button">X</button>
+       </div>
+       <br>
+       <form>
+            <input  class="firstN"   type="text" placeholder="First name">
+            <input class="LastN" type="text" placeholder="Last name"><br><br>
+            <input class="E_P" type="email" placeholder="Enter email"><br><br>
+            <input class="P_E" type="password" placeholder="Enter password"><br><br>
+            <button id="Sign_Button">Sign up</button>
+       </form> 
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
