@@ -1,6 +1,106 @@
 body{
     background-color: #f0f2f5;
 }
+ul{
+    border: 1px solid;
+    width: 50px;
+    height: 670px;
+    padding: 40px 12px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background-color: blue;
+    border-radius: 25px;
+    border: none;
+    transition: width 0,5s;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.sideBar.active{
+    width: 250px;
+    transition: 1s;
+}
+ul li{
+    list-style: none;
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+    width: 250px;
+}
+ul li.active{
+    background-color: #f0f2f5;
+    color: black;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.menu{
+    padding: 25px;
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    width: 20px;
+    position: fixed;
+    right: 50px;
+    top: 25px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu.active{
+    background: red;
+}
+
+.menu i.open, .menu.active i.close{
+    display: block;
+} 
+.menu i.close, .menu.active i.open{
+    display: none;
+} 
+
+/* ovo su ikonice */
+.fa-house-chimney{
+    padding-right: 30px;
+    font-size: 30px;
+}
+.fa-user{
+    padding-right: 36px;
+    font-size: 30px;
+}
+.fa-comments{
+    padding-right: 25px;
+    font-size: 30px;
+}
+.fa-gear{
+    padding-right: 30px;
+    font-size: 30px;
+}
+.fa-question{
+    padding-right: 43px;
+    font-size: 30px;
+}
+.fa-lock{
+    padding-right: 34px;
+    font-size: 30px;
+}
+.fa-right-from-bracket{
+    padding-right: 30px;
+    font-size: 30px;
+}
+.fa-bars{
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+.fa-xmark{
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+/* ovde se zavrsavaju */
+
 .glavni_div{
     display: flex;
     justify-content: center;
@@ -8,27 +108,14 @@ body{
     margin-top: 100px;
     height: 450px;
     width: 1250px;
-    margin-left: 150px;
+    margin-left: 180px;
     border: 1px solid;
     border: none;
     gap: 200px;
     position: relative;
 }
-
 .text_fb{
-    margin-top: -80px;
-    animation: animacija2 1s linear 0s 1 normal forwards; 
-}
-@keyframes animacija2 {
-	0% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+    margin-left: 130px;
 }
 h1{
     font-size: 60px;
@@ -48,18 +135,6 @@ h1{
     border: none;
     box-shadow: 0px 2px 8px  grey;
     background-color: white;
-    animation: animacija 1s linear 0s 1 normal forwards;
-}
-@keyframes animacija {
-	0% {
-		opacity: 0;
-		transform: translateX(250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
 }
 .input1{
     padding: 15px;
