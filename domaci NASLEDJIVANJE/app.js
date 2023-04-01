@@ -20,7 +20,7 @@ class Student extends Osoba{
     }
     
     prijavaIspita(){
-        return`Ja sam ${this.ime} ${this.prezime}, idem na ${this.fakultet} fakultet.  `
+        return`I'm  ${this.ime} ${this.prezime}, I'm going to ${this.fakultet} college.  `
     }
 }
 
@@ -30,7 +30,3 @@ const display = (contet) => {
 
 const student = new Student("Anes", "Medjedovic", "Internacinalni")
 display(student.prijavaIspita())
-
-
-
-
