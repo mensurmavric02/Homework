@@ -3,9 +3,7 @@
 //Klasa student ima metodu prijavaIspita()
 //Klasa student treba da ispisuje ime i prezime studenta i fakultet
 //Primer: "Ja sam Pera Peric sa fakulteta Racunarskih nauka"
-
-
-
+ 
 class Osoba{
     constructor(ime, prezime){
         this.ime = ime
